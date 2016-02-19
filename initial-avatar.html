@@ -44,6 +44,41 @@
 			is: 'initial-avatar',
 			properties: {
 				/**
+				 * A map that matches the avatar's initial with it's (hex) background color. The map can be modified as needed.
+				 */
+				colorMap: {
+					type: Object,
+					value: {
+						a: '#E57373',
+						b: '#7986CB',
+						c: '#64B5F6',
+						d: '#4DB6AC',
+						e: '#388E3C',
+						f: '#FFB74D',
+						g: '#FF8A65',
+						h: '#A1887F',
+						i: '#E0E0E0',
+						j: '#90A4AE',
+						k: '#E57373',
+						l: '#7986CB',
+						m: '#64B5F6',
+						n: '#4DB6AC',
+						o: '#388E3C',
+						p: '#FFB74D',
+						q: '#FF8A65',
+						r: '#A1887F',
+						s: '#E0E0E0',
+						t: '#90A4AE',
+						u: '#E57373',
+						v: '#7986CB',
+						w: '#64B5F6',
+						x: '#4DB6AC',
+						y: '#388E3C',
+						z: '#FFB74D'
+					}
+				},
+
+				/**
 				 * Value of the text to display inside. Intended to be a single character.
 				 */
 				initial: {
@@ -67,68 +102,7 @@
 					observer: '_colorChanged'
 				}
 			},
-			/**
-			 * A map that matches the avatar's initial with it's (hex) background color. The map can be modified as needed. The
-			 * default is below:
-			 *
-			 * colorMap: {
-					a: '#E57373',
-					b: '#7986CB',
-					c: '#64B5F6',
-					d: '#4DB6AC',
-					e: '#388E3C',
-					f: '#FFB74D',
-					g: '#FF8A65',
-					h: '#A1887F',
-					i: '#E0E0E0',
-					j: '#90A4AE',
-					k: '#E57373',
-					l: '#7986CB',
-					m: '#64B5F6',
-					n: '#4DB6AC',
-					o: '#388E3C',
-					p: '#FFB74D',
-					q: '#FF8A65',
-					r: '#A1887F',
-					s: '#E0E0E0',
-					t: '#90A4AE',
-					u: '#E57373',
-					v: '#7986CB',
-					w: '#64B5F6',
-					x: '#4DB6AC',
-					y: '#388E3C',
-					z: '#FFB74D'
-			}
-			 *
-			 */
-			colorMap: {
-					a: '#E57373',
-					b: '#7986CB',
-					c: '#64B5F6',
-					d: '#4DB6AC',
-					e: '#388E3C',
-					f: '#FFB74D',
-					g: '#FF8A65',
-					h: '#A1887F',
-					i: '#E0E0E0',
-					j: '#90A4AE',
-					k: '#E57373',
-					l: '#7986CB',
-					m: '#64B5F6',
-					n: '#4DB6AC',
-					o: '#388E3C',
-					p: '#FFB74D',
-					q: '#FF8A65',
-					r: '#A1887F',
-					s: '#E0E0E0',
-					t: '#90A4AE',
-					u: '#E57373',
-					v: '#7986CB',
-					w: '#64B5F6',
-					x: '#4DB6AC',
-					y: '#388E3C',
-					z: '#FFB74D'
-			},
+
 			ready: function() {
 				if(this.initial) {
 					this.color = this.colorMap[this.initial.toLowerCase()];
