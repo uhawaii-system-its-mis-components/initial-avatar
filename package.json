@@ -2,8 +2,9 @@
   "name": "initial-avatar",
   "homepage": "https://github.com/uhawaii-system-its-mis-components/initial-avatar",
   "bugs": "https://github.com/uhawaii-system-its-mis-components/initial-avatar/issues",
-  "main": "initial-avatar.js",
-  "files": "initial-avatar.js",
+  "files": [
+    "initial-avatar.js"
+  ]
   "dependencies": {
     "@polymer/lit-element": "^0.5.2",
     "@webcomponents/webcomponentsjs": "^2.0.2"
