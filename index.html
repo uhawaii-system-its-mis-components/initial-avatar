@@ -1,20 +1,148 @@
-<!doctype html>
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lit-element example</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-  <link rel="import" href="../iron-component-page/iron-component-page.html">
-
-</head>
+    <!-- Polyfills only needed for Firefox and Edge. -->
+    <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="initial-avatar.js" type="module"></script>
+  </head>
 <body>
-  <!-- Note: if the main element for this repository doesn't
-       match the folder name, add a src="&lt;main-component&gt;.html" attribute,
-       where &lt;main-component&gt;.html" is a file that imports all of the
-       components you want documented. -->
-  <iron-component-page></iron-component-page>
+  <style>
+    initial-avatar {
+      display:block;
+      height: 40px;
+      width: 40px;
+      padding: 5px;
+    }
+  </style>
+  <!-- Basic Use Square -->
+  <initial-avatar initial="a"></initial-avatar>
+  <initial-avatar initial="b"></initial-avatar>
+  <initial-avatar initial="c"></initial-avatar>
+  <initial-avatar initial="d"></initial-avatar>
+  <initial-avatar initial="e"></initial-avatar>
+  <initial-avatar initial="f"></initial-avatar>
+  <initial-avatar initial="g"></initial-avatar>
+  <initial-avatar initial="h"></initial-avatar>
+  <initial-avatar initial="i"></initial-avatar>
+  <initial-avatar initial="j"></initial-avatar>
+  <initial-avatar initial="k"></initial-avatar>
+  <initial-avatar initial="l"></initial-avatar>
+  <initial-avatar initial="m"></initial-avatar>
+  <initial-avatar initial="n"></initial-avatar>
+  <initial-avatar initial="o"></initial-avatar>
+  <initial-avatar initial="p"></initial-avatar>
+  <initial-avatar initial="q"></initial-avatar>
+  <initial-avatar initial="r"></initial-avatar>
+  <initial-avatar initial="s"></initial-avatar>
+  <initial-avatar initial="t"></initial-avatar>
+  <initial-avatar initial="u"></initial-avatar>
+  <initial-avatar initial="v"></initial-avatar>
+  <initial-avatar initial="w"></initial-avatar>
+  <initial-avatar initial="x"></initial-avatar>
+  <initial-avatar initial="y"></initial-avatar>
+  <initial-avatar initial="z"></initial-avatar>
 
+  <!-- Basic Use Circle -->
+  <initial-avatar initial="a" circle></initial-avatar>
+  <initial-avatar initial="b" circle></initial-avatar>
+  <initial-avatar initial="c" circle></initial-avatar>
+  <initial-avatar initial="d" circle></initial-avatar>
+  <initial-avatar initial="e" circle></initial-avatar>
+  <initial-avatar initial="f" circle></initial-avatar>
+  <initial-avatar initial="g" circle></initial-avatar>
+  <initial-avatar initial="h" circle></initial-avatar>
+  <initial-avatar initial="i" circle></initial-avatar>
+  <initial-avatar initial="j" circle></initial-avatar>
+  <initial-avatar initial="k" circle></initial-avatar>
+  <initial-avatar initial="l" circle></initial-avatar>
+  <initial-avatar initial="m" circle></initial-avatar>
+  <initial-avatar initial="n" circle></initial-avatar>
+  <initial-avatar initial="o" circle></initial-avatar>
+  <initial-avatar initial="p" circle></initial-avatar>
+  <initial-avatar initial="q" circle></initial-avatar>
+  <initial-avatar initial="r" circle></initial-avatar>
+  <initial-avatar initial="s" circle></initial-avatar>
+  <initial-avatar initial="t" circle></initial-avatar>
+  <initial-avatar initial="u" circle></initial-avatar>
+  <initial-avatar initial="v" circle></initial-avatar>
+  <initial-avatar initial="w" circle></initial-avatar>
+  <initial-avatar initial="x" circle></initial-avatar>
+  <initial-avatar initial="y" circle></initial-avatar>
+  <initial-avatar initial="z" circle></initial-avatar>
+
+  <!-- The + doesn't have a color mapped to it so it uses the default -->
+  <initial-avatar initial="+" circle></initial-avatar>
+
+  <!-- The + doesn't have a color mapped to it but the color is provided as a style -->
+  <style>
+    initial-avatar.black {
+      --bg-color: black;
+      }
+  </style>
+  <initial-avatar class="black" initial="+" circle></initial-avatar>
+
+  <!-- Remapping the colors -->
+  <style>
+    .remap {
+      --a-bg-color: #B71C1C;
+      --b-bg-color: #1A237E;
+      --c-bg-color: #0D47A1;
+      --d-bg-color: #004D40;
+      --e-bg-color: #1B5E20;
+      --f-bg-color: #EF6C00;
+      --g-bg-color: #BF360C;
+      --h-bg-color: #3E2723;
+      --i-bg-color: #212121;
+      --j-bg-color: #263238;
+      --k-bg-color: #B71C1C;
+      --l-bg-color: #1A237E;
+      --m-bg-color: #0D47A1;
+      --n-bg-color: #004D40;
+      --o-bg-color: #1B5E20;
+      --p-bg-color: #EF6C00;
+      --q-bg-color: #BF360C;
+      --r-bg-color: #3E2723;
+      --s-bg-color: #212121;
+      --t-bg-color: #263238;
+      --u-bg-color: #B71C1C;
+      --v-bg-color: #1A237E;
+      --w-bg-color: #0D47A1;
+      --x-bg-color: #004D40;
+      --y-bg-color: #1B5E20;
+      --z-bg-color: #EF6C00;
+    }
+  </style>
+
+  <initial-avatar initial="a" circle class="remap"></initial-avatar>
+  <initial-avatar initial="b" circle class="remap"></initial-avatar>
+  <initial-avatar initial="c" circle class="remap"></initial-avatar>
+  <initial-avatar initial="d" circle class="remap"></initial-avatar>
+  <initial-avatar initial="e" circle class="remap"></initial-avatar>
+  <initial-avatar initial="f" circle class="remap"></initial-avatar>
+  <initial-avatar initial="g" circle class="remap"></initial-avatar>
+  <initial-avatar initial="h" circle class="remap"></initial-avatar>
+  <initial-avatar initial="i" circle class="remap"></initial-avatar>
+  <initial-avatar initial="j" circle class="remap"></initial-avatar>
+  <initial-avatar initial="k" circle class="remap"></initial-avatar>
+  <initial-avatar initial="l" circle class="remap"></initial-avatar>
+  <initial-avatar initial="m" circle class="remap"></initial-avatar>
+  <initial-avatar initial="n" circle class="remap"></initial-avatar>
+  <initial-avatar initial="o" circle class="remap"></initial-avatar>
+  <initial-avatar initial="p" circle class="remap"></initial-avatar>
+  <initial-avatar initial="q" circle class="remap"></initial-avatar>
+  <initial-avatar initial="r" circle class="remap"></initial-avatar>
+  <initial-avatar initial="s" circle class="remap"></initial-avatar>
+  <initial-avatar initial="t" circle class="remap"></initial-avatar>
+  <initial-avatar initial="u" circle class="remap"></initial-avatar>
+  <initial-avatar initial="v" circle class="remap"></initial-avatar>
+  <initial-avatar initial="w" circle class="remap"></initial-avatar>
+  <initial-avatar initial="x" circle class="remap"></initial-avatar>
+  <initial-avatar initial="y" circle class="remap"></initial-avatar>
+  <initial-avatar initial="z" circle class="remap"></initial-avatar>
 </body>
 </html>
