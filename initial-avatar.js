@@ -13,8 +13,6 @@ class InitialAvatar extends LitElement {
 
   constructor() {
     super();
-    //this.initial = 'a';
-    //this.circle = false;
   }
 
   _render({initial, circle}) {
