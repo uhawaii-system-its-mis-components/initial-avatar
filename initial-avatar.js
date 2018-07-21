@@ -4,7 +4,6 @@ import {LitElement, html} from '@polymer/lit-element';
 
 class InitialAvatar extends LitElement {
 
-  // Public property API that triggers re-render (synced with attributes)
   static get properties() {
     return {
       initial: String,
