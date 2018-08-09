@@ -22,6 +22,9 @@ class InitialAvatar extends LitElement {
     }
     return html`
       <style>
+        :host {
+          display: block;
+        }
         #initial {
           color: rgba(256, 256, 256, .7);
           text-transform: uppercase;
