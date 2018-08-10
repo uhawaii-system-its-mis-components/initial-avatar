@@ -1,19 +1,3 @@
-# initial-avatar
+[![Build Status](https://travis-ci.org/uhawaii-system-its-mis-components/initial-avatar.svg?branch=master)](https://travis-ci.org/uhawaii-system-its-mis-components/initial-avatar)
 
-Start a development environment with:
-
-```
-make
-```
-Then, the first time:
-
-```
-yarn install
-polymer serve --hostname 0.0.0.0
-```
-
-or just
-
-```
-polymer serve --hostname 0.0.0.0
-```
+_[Demo and API docs](http://uhawaii-system-its-mis-components.github.io/initial-avatar/)_
